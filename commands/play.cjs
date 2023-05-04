@@ -34,9 +34,9 @@ module.exports = {
                 }
             });
 
-            return interaction.followUp(`**${track.title}** enqueued!`);
+            return await interaction.followUp(`**${track.title}** enqueued!`);
         } catch (e) {
-            return interaction.followUp(`Something went wrong: ${e}`);
+            return await interaction.followUp(`Something went wrong: ${e}`);
         }
     },
 };
